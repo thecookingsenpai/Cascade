@@ -21,14 +21,26 @@ Ensure you have Node.js installed on your system. Cascade is implemented in Type
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/Cascade-Hashing.git
-cd Cascade-Hashing
+git clone https://github.com/thecookingsenpai/Cascade
+cd Cascade
 ```
 
 Install the necessary dependencies (there should be none anyway):
 
 ```typescript
 bun install
+```
+
+Or
+
+```typescript
+npm install
+```
+
+Or
+
+```typescript
+yarn install
 ```
 
 ### Usage
@@ -39,10 +51,22 @@ You can test Cascade by doing:
 bun src/index.ts
 ```
 
+Or
+
+```typescript
+tsx src/index.ts
+```
+
+Or
+
+```typescript
+yarn src/index.ts
+```
+
 To use Cascade in your project, import the `Cascade` class from the `cascade.ts` file and create an instance:
 
 ```typescript
-import Cascadefrom './cascade';
+import Cascade from './cascade';
 
 const hasher = new Cascade();
 const result = hasher.hash("YourInputString");
