@@ -138,10 +138,11 @@ export default class Cascade {
     }
 }
 
-// Example usage (launch like "tsx cascade.ts")
-// You are strongly encouraged to import Cascade in other sources
+/* NOTE Usage --------------------------------
 
 const hasher = new Cascade(37, 20, 5, "optional_seed")
 const result = hasher.hash("Hello, world!", "opional_salt")
 console.log("Salt:", result.salt)
 console.log("Hash:", result.hash)
+
+*/

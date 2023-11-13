@@ -27,15 +27,21 @@ cd Cascade-Hashing
 
 Install the necessary dependencies (there should be none anyway):
 
-```
-npm install
+```typescript
+bun install
 ```
 
 ### Usage
 
+You can test Cascade by doing:
+
+```typescript
+bun src/index.ts
+```
+
 To use Cascade in your project, import the `Cascade` class from the `cascade.ts` file and create an instance:
 
-```
+```typescript
 import Cascadefrom './cascade';
 
 const hasher = new Cascade();
@@ -46,7 +52,7 @@ console.log("Salt:", result.salt);
 
 You can also specify custom parameters like prime number, salt size, number of iterations, and seed:
 
-```
+```typescript
 const hasher = new Cascade(37, 20, 5, "optional_seed");
 const result = hasher.hash("YourInputString", "optional_salt");
 ```
